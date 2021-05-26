@@ -1,0 +1,131 @@
+/*generel*/
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+p, a {
+    font-family: 'Roboto';
+    font-weight: normal;
+    padding:10px 10px 10px 40px;
+    font-size: small;
+    color: white;
+}
+    
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+  }
+
+ 
+  /*Grid layout*/
+.gridLayoutContainer{
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 33,3%);
+grid-column-gap: 150px;
+grid-row-gap: 0px;
+}
+
+  
+  /*Header*/
+  header{
+    padding:40px 10px 40px 0px;
+    grid-area: 1 / 1 / 2 / 4;  
+  }
+header img {
+    width: 10%;
+}
+
+header a {
+    color: #FFCB35;
+}
+
+  /*Body*/
+
+  .pageTitle {
+      background-color: #FFCB35;
+      margin: 0px 0px 0px 0px;
+      padding:10px 10px 10px 20px;
+      border-style: solid;
+      border-width: 0px 0px 0px 20px;
+      border-color: #E8B521;
+  }
+     
+  
+  .pageTitle, h1 {
+    font-size:20px;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .mainContent {
+    grid-area: 2 / 1 / 3 / 3; 
+  }
+  /*Video record sektion*/
+  .videoContainer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 22px;
+    padding:10px 10px 10px 40px;
+  }
+
+  
+  #videoRecord {
+      width: 40%;
+  }
+
+  #videoSingALong {
+    width: 40%;
+    height: 250px;
+    background-color: darkgray;
+    
+    
+}
+#videoPreview {
+    padding:10px 10px 10px 40px;
+}
+#videoPreview h3{
+color:#FFCB35;
+}
+
+#videoPreview p {
+    padding:0px 0px 0px 0px; 
+}
+
+  /*aside*/
+  aside{
+    grid-area: 2 / 3 / 3 / 4;
+  }
+.aside-container {
+    background-color: white;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 1px 0px;
+}
+
+.aside-container h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.aside-container ul li{
+    list-style-type: none;
+    margin: 10px 0px 10px 0px;
+}
+
+.aside-container p {
+    color: black;
+}
+  
+
+/*footer*/
+
+  footer {
+    grid-area: 3 / 1 / 4 / 4;
+  }

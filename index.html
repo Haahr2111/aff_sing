@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aarhus Fremad Sing-a-long</title>
+<meta charset="UTF-8">
+<meta name="description" content="Syng med som var du på stadion Riisvangen og vis din support til Aarhus Fremad">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Grid layout container - brugt til at definere content layout i css'en-->
+    <div class="gridLayoutContainer">
+
+<!-- Header content her-->
+<header>
+
+<a href="#"><img src="images/aarhus fremad.png" alt="Aarhus Fremad">TILBAGE TIL HOME PAGE</a>
+</header>
+
+    <!-- Main content i section -->
+<section class="mainContent">
+    <div class="pageTitle">
+    <h1>Syng med som var du på stadion!</h1>
+</div>  
+<p>Vi gemmer din optagelse og sætte den sammen med de andre fans sang, så vi tilslut kan samle alt jeres sang til et stadion brøl!</p>
+
+<!-- Video optagelses section -->
+<div class="videoContainer">
+<div id="videoRecord">
+        <video autoplay muted width="100%" height="auto"></video>
+        <button onclick="playVid()" id="btnStart"> <i class="fa fa-video-camera"></i> OPTAG</button>
+        <button onclick="pauseVid()" id="btnStop"> <i class="fas fa-stop"></i> STOP</button>
+    </div>
+    <div id="videoSingALong">
+        <video id="VideoSong" width="100%" height="auto">
+            <source src="videos/The best of_ Hjørnebanden (inkl. hits som _Alle ska' dø_, _Der' hjørne_ og _Det ska' nok gå!_.mp4" type="video/mp4">
+          </video>
+    </div>
+</div>
+    <div id="videoPreview">
+
+        <h3>Gennemse din optagelse</h3>
+        <p>Se din optagelse igennem her! 
+            Hvis du ikke er tilfreds, kan du gå tilbage  og lave en ny optagelse.</p>
+        <video id="vid2" controls width="160" height="120"></video>
+    </div>
+    
+
+
+
+
+
+</section>
+
+ <!-- Aside content her -->
+<aside>
+    <div class="aside-container">
+<h3 class="pageTitle">SÅDAN GØR DU</h3>
+<ul>
+    <li><i><strong>Trin 1:</strong></i> Tryk OPTAG</li>
+    <li><i><strong>Trin 2:</strong></i> Fyr den af og skrål så højt du kan!</li>
+    <li><i><strong>Trin 3:</strong></i> Tryk STOP og gennemse klip</li>
+    <li><i><strong>Trin 4:</strong></i> Ikke tilfreds? Tryk OPTAG igen! Ellers SEND</li>
+    <li><i><strong>Trin 5:</strong></i> Du har sendt din optagelse og har bidraget til vores fællessang! TAK!</li>
+</ul>
+</div>
+
+<div class="aside-container">
+    <h3 class="pageTitle"> Du bidrager til noget stort!</h3>
+   <p>Vi samler dit optagelse med de andre bidrag fra vores fans, og samler det til én video. Videoen vil blive offentliggjort på vores hjemmeside og social medier, så vi alle kan dele den med hinanden og vise resten af fodbold Danmark, hvorfor Aarhus Fremads fans er de bedste her i landet.</p>
+<p><i><strong>#dsng #forzafremad #solskinpåvangen</strong></i></p>   
+</div>
+
+</aside>
+
+<!-- footer content her -->
+<footer>
+<p>Made by rasmus haahr pedersen</p>
+</footer>
+
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
