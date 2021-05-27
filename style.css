@@ -84,9 +84,7 @@ header a {
     padding:10px 10px 10px 40px;
   }
 
-  #VideoSong {
-    height: 40vh;
-  }
+ 
   
   
   #videoRecord {
@@ -94,6 +92,8 @@ header a {
   }
 
   #videoSingALong {
+    display: flex;
+    justify-content: center;
     width: 40%;
   
     
@@ -188,7 +188,5 @@ button:active {
     width:45%;
   }
 
-  #VideoSong {
-    height: 20vh;
-  }
+  
   }
