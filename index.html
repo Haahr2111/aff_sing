@@ -33,6 +33,9 @@
 <div class="videoContainer">
 <div id="videoRecord">
     <!--Camera optager-->
+    <center>
+    <h4>Her er du!</h4>
+</center>
         <video autoplay muted width="100%" height="auto"></video>
 
          <!--Knapper - stop og start (Start og pause synd med video)-->
@@ -41,9 +44,12 @@
         <button onclick="pauseVid()" id="btnStop"> <i class="fas fa-stop"></i> STOP</button>
     </div>
     </div>
-
+    
     <div id="videoSingALong">
         <!-- Syng med video-->
+    <center>
+        <h4>Sangen spiller når optagelsen starter!</h4>
+    </center>
         <video id="VideoSong" width="100%" height="auto">
             <source src="videos/yt1s.com - The best of Hjørnebanden inkl hits som Alle ska dø Der hjørne og Det ska nok gå_360p.mp4" type="video/mp4">
           </video>
@@ -64,7 +70,7 @@
 <div id="videoPreviewOutro">
 
     <!--Send video til server her-->
-        <p>Tilfreds? <br>Send dit bidrag her!</p>
+        <p> <strong>Tilfreds?<br></strong>Send dit bidrag her! </p>
         <button id="btnSend">SEND</button>
     </div>
     </div>

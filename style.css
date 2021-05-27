@@ -83,28 +83,31 @@ header a {
       gap: 22px;
     padding:10px 10px 10px 40px;
   }
-
- 
   
   
   #videoRecord {
       width: 40%;
   }
-
+#videoRecord h4{
+color: #FFCB35;
+}
   #videoSingALong {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 40%;
-  
-    
-    
 }
+
+#videoSingALong h4{
+color: #FFCB35;
+}
+
 #videoPreview {
   display: flex;
  flex-wrap: wrap;
  gap:20px;
     padding:10px 10px 10px 40px;
 }
+
 #videoPreviewIntro{
   width: 100%;
 }
