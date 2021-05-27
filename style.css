@@ -168,4 +168,13 @@ button:active {
   footer {
     grid-area: 4 / 1 / 5 / 4;
   }
+
+  button {
+    background-color: #FFCB35;
+    border: #FFCB35;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    width:45%;
+  }
   }
