@@ -74,6 +74,7 @@ header a {
   .mainContent {
     grid-area: 2 / 1 / 3 / 3; 
   }
+
   /*Video record sektion*/
   .videoContainer{
       display: flex;
@@ -90,8 +91,7 @@ header a {
 
   #videoSingALong {
     width: 40%;
-    height: 250px;
-    background-color: darkgray;
+  
     
     
 }
@@ -106,6 +106,17 @@ color:#FFCB35;
     padding:0px 0px 0px 0px; 
 }
 
+button {
+  background-color: #FFCB35;
+  border: #FFCB35;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:active {
+  background-color: #E8B521;
+}
   /*aside*/
   aside{
     grid-area: 2 / 3 / 3 / 4;
