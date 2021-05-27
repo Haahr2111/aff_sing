@@ -212,11 +212,15 @@ li {
   color: white;  
 }
     
-h1,h2,h3,h4,h5 {
+h1,h2,h3{
     font-family: 'Roboto';
     font-weight: bold;
     font-style: italic;
     font-size: medium;
+}
+
+h4,h5 {
+  font-size: small;
 }
   
   }
