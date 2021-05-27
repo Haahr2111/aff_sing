@@ -194,6 +194,26 @@ button:active {
     border-radius: 5px;
     width:45%;
   }
+  p, a {
+    font-family: 'Roboto';
+    font-weight: normal;
+    padding:10px 10px 10px 40px;
+    font-size: smaller;
+    color: white;
+}
 
+li {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: smaller;
+  color: white;  
+}
+    
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+}
   
   }
