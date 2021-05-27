@@ -100,8 +100,15 @@ header a {
     
 }
 #videoPreview {
+  display: flex;
+ flex-wrap: wrap;
+ gap:20px;
     padding:10px 10px 10px 40px;
 }
+#videoPreviewIntro{
+  width: 100%;
+}
+
 #videoPreview h3{
 color:#FFCB35;
 }
