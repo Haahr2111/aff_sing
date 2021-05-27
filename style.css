@@ -79,11 +79,15 @@ header a {
   .videoContainer{
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       gap: 22px;
     padding:10px 10px 10px 40px;
   }
 
+  #VideoSong {
+    height: 40vh;
+  }
+  
   
   #videoRecord {
       width: 40%;
@@ -104,6 +108,12 @@ color:#FFCB35;
 
 #videoPreview p {
     padding:0px 0px 0px 0px; 
+}
+
+#buttonsContainer {
+  display: flex;
+  justify-content:  space-between;
+  
 }
 
 button {
@@ -176,5 +186,9 @@ button:active {
     font-weight: bold;
     border-radius: 5px;
     width:45%;
+  }
+
+  #VideoSong {
+    height: 20vh;
   }
   }
