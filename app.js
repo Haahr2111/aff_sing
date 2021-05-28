@@ -12,14 +12,14 @@ function pauseVid() {
 } 
 
 
-
+let MaxLengthSecunds = 16400;
 
 let constraintObj = { 
     audio: true, 
     video: { 
         facingMode: "user", 
-        
-    } 
+       
+    }
 }; 
 
 //handle older browsers that might implement getUserMedia in some way
@@ -69,7 +69,8 @@ navigator.mediaDevices.getUserMedia(constraintObj)
     let vidSave = document.getElementById('vid2');
     let mediaRecorder = new MediaRecorder(mediaStreamObj);
     let chunks = [];
-    
+  
+
     start.addEventListener('click', (ev)=>{
         mediaRecorder.start();
         console.log(mediaRecorder.state);
@@ -87,7 +88,10 @@ navigator.mediaDevices.getUserMedia(constraintObj)
         let videoURL = window.URL.createObjectURL(blob);
         vidSave.src = videoURL;
     }
+
 })
+
+
 .catch(function(err) { 
     console.log(err.name, err.message); 
 });
