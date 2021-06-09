@@ -12,7 +12,6 @@ function pauseVid() {
 } 
 
 
-let MaxLengthSecunds = 16400;
 
 let constraintObj = { 
     audio: true, 
@@ -49,21 +48,21 @@ if (navigator.mediaDevices === undefined) {
 
 navigator.mediaDevices.getUserMedia(constraintObj)
 .then(function(mediaStreamObj) {
-    //connect the media stream to the first video element
+    //connect media stream til det første video element
     let video = document.querySelector('video');
     if ("srcObject" in video) {
         video.srcObject = mediaStreamObj;
     } else {
-        //old version
+        //old version browser
         video.src = window.URL.createObjectURL(mediaStreamObj);
     }
     
     video.onloadedmetadata = function(ev) {
-        //show in the video element what is being captured by the webcam
+        //Vis i video element hvad der bliver vist fra webcam
         video.play();
     };
     
-    //add listeners for saving video/audio
+    //Opsætter listeners for at gemme video/audio
     let start = document.getElementById('btnStart');
     let stop = document.getElementById('btnStop');
     let vidSave = document.getElementById('vid2');
@@ -71,24 +70,24 @@ navigator.mediaDevices.getUserMedia(constraintObj)
     let chunks = [];
   
 
-    start.addEventListener('click', (ev)=>{
+    start.addEventListener('click', (e)=>{
         mediaRecorder.start();
         console.log(mediaRecorder.state);
     })
-    stop.addEventListener('click', (ev)=>{
+    stop.addEventListener('click', (e)=>{
         mediaRecorder.stop();
         console.log(mediaRecorder.state);
     });
     mediaRecorder.ondataavailable = function(ev) {
         chunks.push(ev.data);
     }
-    mediaRecorder.onstop = (ev)=>{
+    mediaRecorder.onstop = (e)=>{
         let blob = new Blob(chunks, { 'type' : 'video/mp4;' });
         chunks = [];
         let videoURL = window.URL.createObjectURL(blob);
         vidSave.src = videoURL;
     }
-
+   
 })
 
 
